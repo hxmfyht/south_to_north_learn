@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
-import 'textfiels_widget_clearn.dart';
-import 'scaffold_widget_clearn.dart';
+import 'package:south_to_north_learn/widget/scaffold/scaffold_drawer_widget_clearn.dart';
 
+import 'scaffold/scaffold_widget_clearn2.dart';
+import 'scaffold/scaffold_widget_clearn.dart';
+import 'scaffold/scaffold_appbar_widget_clearn.dart';
+import 'scaffold/scaffold_appbar_widget_clearn2.dart';
+
+
+import 'textfiels_widget_clearn.dart';
 import 'icon_widget_clearn.dart';
 import 'text_widget_clearn.dart';
 
@@ -15,8 +21,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      home:MyWidgetClearn(),
+      theme:ThemeData(
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent
+        ),
       title:"widget",
-      home:MyWidgetClearn()
+
     );
   }
 }
@@ -31,7 +42,11 @@ class MyWidgetClearn extends StatelessWidget {
       // TextWidgetClearn(),
       // IconWidgetClearn(),
       // TextfielsWidgetClearn()
-      ScaffoldWidgetClearn()
+      // ScaffoldWidgetClearn()
+      // ScaffoldWidget2Clearn()
+      // ScaffoldAppbarWidgetClearn()
+      // ScaffoldAppbarWidgetClearn2()
+      ScaffoldDrawerWidgetClearn()
     );
   }
 }
