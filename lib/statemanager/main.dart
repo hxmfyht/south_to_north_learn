@@ -1,6 +1,25 @@
 import 'package:flutter/material.dart';
+import './screens/add_screen.dart';
+import './inheritedwidget/mode_data.dart';
+import './inheritedwidget/state_container.dart';
 
-void main()=>runApp(MyApp());
+// void main()=>runApp(MyApp());
+void main()=>runApp(
+  StateContainer(state: AppState(),child:MyApp())
+);
+
+class HomeApp extends StatelessWidget{
+  @override
+  Widget build(BuildContext context){
+    return MaterialApp(
+      title:'Inherited Widget Demo',
+      routes: {
+        '/':(context)=>HomeScreen(),
+        '/addItem':(context)=>AddScreen(),
+      },
+    );
+  }
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
