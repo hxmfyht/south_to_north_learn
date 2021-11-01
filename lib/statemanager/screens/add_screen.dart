@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:south_to_north_learn/statemanager/inheritedwidget/mode_data.dart';
 import 'package:south_to_north_learn/statemanager/inheritedwidget/state_container.dart';
 class AddScreen extends StatefulWidget {
-   AddScreen(Key? key);
+   AddScreen({Key? key});
 
   @override
   _AddScreenState createState() => _AddScreenState();

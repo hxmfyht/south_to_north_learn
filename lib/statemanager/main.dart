@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+
 import './screens/add_screen.dart';
+import './screens/home_screen.dart';
 import './inheritedwidget/mode_data.dart';
 import './inheritedwidget/state_container.dart';
 
 // void main()=>runApp(MyApp());
 void main()=>runApp(
-  StateContainer(state: AppState(),child:MyApp())
+  StateContainer(state: AppState(),child:HomeApp())
 );
 
 class HomeApp extends StatelessWidget{
